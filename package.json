@@ -1,0 +1,44 @@
+{
+  "name": "parser_combinators_language",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node_modules/.bin/ts-node src/main",
+    "test": "node_modules/.bin/jest"
+  },
+  "devDependencies": {
+    "@types/jest": "^25.1.4",
+    "@types/node": "^13.9.1",
+    "jest": "^25.1.0",
+    "ts-jest": "^25.2.1",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.8.3"
+  },
+  "jest": {
+    "rootDir": ".",
+    "testEnvironment": "node",
+    "testRegex": ".spec.ts$",
+    "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "coverageDirectory": "./coverage",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ],
+    "moduleDirectories": [
+      "node_modules",
+      "src"
+    ],
+    "verbose": false,
+    "silent": false
+  }
+}
